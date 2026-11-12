@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Аренда авто на Пхукете · КП</title>
+  <meta name="description" content="Коммерческое предложение: онлайн-брони аренды авто на Пхукете через Google Ads, Яндекс Директ и Meta. Спрос, каналы, три медиаплана и стоимость ведения.">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="referrer" content="no-referrer">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#F7F5F0" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#121316" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="Онлайн-брони аренды авто на Пхукете: Google, Яндекс, Meta">
+  <meta property="og:description" content="Спрос по языкам и странам, каналы, три медиаплана и стоимость ведения.">
+  <meta property="og:url" content="https://gtvortexteam.github.io/proposals/phuket-rent/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232340C8'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='17' fill='%23fff' text-anchor='middle'%3E%D0%9A%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #F7F5F0; --surface: #FFFFFF; --ink: #16181D; --muted: #5E6573; --rule: #DDD8CC; --rule-strong: #16181D;
+      --accent: #2340C8; --accent-ink: #1A2F99; --accent-soft: #E8ECFB;
+      --good: #1F7A4A; --good-soft: #E3F2EA; --warn: #9A5B00; --warn-soft: #FBF0DC; --bad: #A6322B; --bad-soft: #F8E3E1;
+      --font-text: "Segoe UI", system-ui, -apple-system, Roboto, "Helvetica Neue", Arial, sans-serif;
+      --font-display: Georgia, "Times New Roman", serif;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        color-scheme: dark;
+        --bg: #121316; --surface: #1B1D22; --ink: #ECEAE4; --muted: #9CA1AA; --rule: #2E3138; --rule-strong: #ECEAE4;
+        --accent: #93A5FF; --accent-ink: #B5C2FF; --accent-soft: #232A47;
+        --good: #6FD39C; --good-soft: #17301F; --warn: #F0B65A; --warn-soft: #33270F; --bad: #F08A80; --bad-soft: #3A1C1A;
+      }
+    }
+    :root[data-theme="dark"] {
+      color-scheme: dark;
+      --bg: #121316; --surface: #1B1D22; --ink: #ECEAE4; --muted: #9CA1AA; --rule: #2E3138; --rule-strong: #ECEAE4;
+      --accent: #93A5FF; --accent-ink: #B5C2FF; --accent-soft: #232A47;
+      --good: #6FD39C; --good-soft: #17301F; --warn: #F0B65A; --warn-soft: #33270F; --bad: #F08A80; --bad-soft: #3A1C1A;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.6 var(--font-text); }
+    a { color: var(--accent-ink); text-underline-offset: 2px; }
+    .wrap { max-width: 980px; margin: 0 auto; padding: 0 16px; }
+    header.cover { padding: 56px 0 32px; border-bottom: 2px solid var(--rule-strong); }
+    .kicker { margin: 0 0 12px; color: var(--muted); font-size: 14px; letter-spacing: .04em; text-transform: uppercase; }
+    h1 { margin: 0 0 16px; font: 700 clamp(30px, 5vw, 46px)/1.12 var(--font-display); letter-spacing: -.01em; }
+    .lead { margin: 0 0 20px; font-size: 19px; max-width: 760px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+    .btn { display: inline-block; padding: 10px 18px; border-radius: 6px; font: 600 15px/1.2 var(--font-text); text-decoration: none; cursor: pointer; border: 1.5px solid var(--accent); }
+    .btn--primary { background: var(--accent); color: #fff; }
+    :root[data-theme="dark"] .btn--primary { color: #121316; }
+    @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .btn--primary { color: #121316; } }
+    .btn--ghost { background: transparent; color: var(--accent-ink); }
+    section { padding: 40px 0 8px; }
+    h2 { margin: 0 0 6px; font: 700 clamp(24px, 3.6vw, 31px)/1.2 var(--font-display); }
+    h2 .num { color: var(--accent); margin-right: 8px; }
+    .sub { margin: 0 0 20px; color: var(--muted); }
+    h3 { margin: 26px 0 10px; font-size: 18px; }
+    p { margin: 0 0 14px; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin: 28px 0 0; }
+    .card { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 16px 18px; }
+    .card__big { display: block; font: 700 32px/1.1 var(--font-display); color: var(--accent-ink); margin-bottom: 6px; }
+    .card__txt { font-size: 15px; color: var(--muted); }
+    .grid2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
+    .box { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 18px 20px; }
+    .box h3 { margin-top: 0; }
+    .box ul { margin: 0; padding-left: 20px; }
+    .box li { margin-bottom: 6px; }
+    .note { background: var(--accent-soft); border-left: 4px solid var(--accent); border-radius: 4px; padding: 12px 16px; margin: 18px 0; }
+    .note--warn { background: var(--warn-soft); border-left-color: var(--warn); }
+    .table-wrap { overflow-x: auto; -webkit-overflow-scrolling: touch; margin: 0 0 14px; border: 1px solid var(--rule); border-radius: 10px; background: var(--surface); }
+    table { border-collapse: collapse; width: 100%; font-size: 15px; }
+    th, td { padding: 10px 12px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--rule); }
+    tr:last-child td { border-bottom: 0; }
+    thead th { font-size: 13px; text-transform: uppercase; letter-spacing: .03em; color: var(--muted); font-weight: 600; background: var(--bg); }
+    td.n, th.n { text-align: right; white-space: nowrap; }
+    tbody th { font-weight: 600; }
+    .plans tbody th { min-width: 150px; }
+    .plans td { min-width: 150px; }
+    .plans tbody th, .plans thead th:first-child { position: sticky; left: 0; z-index: 1; background: var(--surface); box-shadow: 1px 0 0 var(--rule); }
+    .plans tr.total th { background: var(--accent-soft); }
+    @media (max-width: 560px) { .plans tbody th { min-width: 118px; } }
+    .plans th.plan { font-size: 16px; text-transform: none; letter-spacing: 0; color: var(--ink); }
+    .plans th.plan small { display: block; font-weight: 400; color: var(--muted); font-size: 13px; }
+    .plans tr.total td, .plans tr.total th { background: var(--accent-soft); font-weight: 700; }
+    .tag { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: 12.5px; font-weight: 600; white-space: nowrap; }
+    .tag--good { background: var(--good-soft); color: var(--good); }
+    .tag--warn { background: var(--warn-soft); color: var(--warn); }
+    .tag--bad { background: var(--bad-soft); color: var(--bad); }
+    .bars { margin: 6px 0 16px; }
+    .bar { display: grid; grid-template-columns: 110px 1fr 56px; gap: 10px; align-items: center; margin-bottom: 7px; font-size: 15px; }
+    .bar__track { height: 12px; background: var(--rule); border-radius: 6px; overflow: hidden; }
+    .bar__fill { height: 100%; background: var(--accent); border-radius: 6px; }
+    .bar__val { text-align: right; color: var(--muted); font-variant-numeric: tabular-nums; }
+    .steps { counter-reset: s; list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+    .steps li { background: var(--surface); border: 1px solid var(--rule); border-radius: 10px; padding: 16px 18px 16px 62px; position: relative; }
+    .steps li::before { counter-increment: s; content: counter(s, decimal) ; position: absolute; left: 18px; top: 14px; width: 30px; height: 30px; border-radius: 50%; background: var(--accent); color: var(--bg); font: 700 16px/30px var(--font-display); text-align: center; }
+    .steps b { display: block; margin-bottom: 4px; }
+    .price { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; }
+    .price__main { background: var(--surface); border: 2px solid var(--accent); border-radius: 12px; padding: 22px; }
+    .price__fig { font: 700 clamp(28px, 4.4vw, 38px)/1.1 var(--font-display); color: var(--accent-ink); margin: 0 0 6px; }
+    small, .small { font-size: 14px; color: var(--muted); }
+    ol.src { padding-left: 20px; font-size: 14px; color: var(--muted); }
+    ol.src li { margin-bottom: 6px; }
+    footer { margin-top: 48px; padding: 28px 0 48px; border-top: 2px solid var(--rule-strong); font-size: 14px; color: var(--muted); }
+    footer p { margin: 0 0 6px; }
+    @media (max-width: 560px) {
+      body { font-size: 16px; }
+      header.cover { padding-top: 36px; }
+      .bar { grid-template-columns: 84px 1fr 48px; }
+      th, td { padding: 8px 10px; font-size: 14px; }
+      .steps li { padding-left: 56px; }
+    }
+    @media print {
+      :root { --bg: #fff; --surface: #fff; }
+      body { font-size: 12pt; }
+      .actions, .no-print { display: none !important; }
+      section { break-inside: auto; padding-top: 20px; }
+      .table-wrap { overflow: visible; }
+      .box, .card, .steps li, tr { break-inside: avoid; }
+      a { color: inherit; text-decoration: none; }
+    }
+  </style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="cover" id="top">
+    <p class="kicker">Коммерческое предложение · 12.11.2026</p>
+    <h1>Онлайн-брони аренды авто на&nbsp;Пхукете через Google, Яндекс и&nbsp;Meta</h1>
+    <p class="lead">Для сайтов thailandrentacar.com, phuketrentacar.ru и travelthai.online. Ниже — сколько людей ищут аренду, где они находятся, какие кампании я запускаю, сколько это стоит и сколько аренд можно ожидать.</p>
+    <p class="small">Performance-маркетинг: Google Ads, Яндекс Директ, Facebook/Instagram</p>
+    <div class="actions">
+      <button type="button" class="btn btn--primary" onclick="window.print()">Сохранить в PDF</button>
+    </div>
+    <div class="cards">
+      <div class="card"><span class="card__big">≈102 тыс.</span><span class="card__txt">поисков аренды машин, байков и скутеров на Пхукете и в Таиланде в месяц в Google, из них машины ≈73 тыс.</span></div>
+      <div class="card"><span class="card__big">≈19 тыс.</span><span class="card__txt">из них делают люди, которые уже находятся на Пхукете</span></div>
+      <div class="card"><span class="card__big">≈6,8 тыс.</span><span class="card__txt">русскоязычных запросов в месяц в Яндексе, 82 % — ещё из России, до вылета</span></div>
+      <div class="card"><span class="card__big">×1,6</span><span class="card__txt">спрос в январе к среднему месяцу; минимум — май–сентябрь</span></div>
+    </div>
+  </header>
+
+  <section id="audience">
+    <h2><span class="num">1</span>Кого я привожу на сайт</h2>
+    <p class="sub">Две аудитории с разным поведением. Под каждую — свои кампании.</p>
+    <div class="grid2">
+      <div class="box">
+        <h3>Уже на Пхукете</h3>
+        <ul>
+          <li>Туристы на острове и экспаты: на Пхукет приезжает ≈10,7 млн иностранных гостей в год, каждый шестой — из России.</li>
+          <li>Ищут «здесь и сейчас»: ≈19 тыс. запросов в месяц в Google делают с самого Пхукета.</li>
+          <li>Каналы: Google Поиск с гео «Таиланд», Яндекс с гео «Таиланд», Facebook/Instagram с гео «Пхукет».</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Планируют поездку</h3>
+        <ul>
+          <li>Бронируют машину заранее: в сопоставимых островных направлениях ≈половина броней делается за 1–8 недель до получения.</li>
+          <li>Ищут из своих стран: Индия, Великобритания, Германия, США, Франция, Австралия, Сингапур, Малайзия, Россия.</li>
+          <li>Каналы: Google Поиск по миру (кроме России), Яндекс по России, Казахстану и Беларуси.</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3>Языки спроса в Google (аренда транспорта + Пхукет/Таиланд)</h3>
+    <div class="bars" role="list">
+      <div class="bar" role="listitem"><span>Английский</span><span class="bar__track"><span class="bar__fill" style="width:63%"></span></span><span class="bar__val">63 %</span></div>
+      <div class="bar" role="listitem"><span>Тайский</span><span class="bar__track"><span class="bar__fill" style="width:11.3%"></span></span><span class="bar__val">11 %</span></div>
+      <div class="bar" role="listitem"><span>Русский</span><span class="bar__track"><span class="bar__fill" style="width:9.5%"></span></span><span class="bar__val">9,5 %</span></div>
+      <div class="bar" role="listitem"><span>Немецкий</span><span class="bar__track"><span class="bar__fill" style="width:3.7%"></span></span><span class="bar__val">3,7 %</span></div>
+      <div class="bar" role="listitem"><span>Французский</span><span class="bar__track"><span class="bar__fill" style="width:3.7%"></span></span><span class="bar__val">3,7 %</span></div>
+      <div class="bar" role="listitem"><span>Китайский</span><span class="bar__track"><span class="bar__fill" style="width:2.8%"></span></span><span class="bar__val">2,8 %</span></div>
+      <div class="bar" role="listitem"><span>Японский</span><span class="bar__track"><span class="bar__fill" style="width:1.7%"></span></span><span class="bar__val">1,7 %</span></div>
+    </div>
+    <p>Индийцы, скандинавы и большинство европейцев ищут по-английски, поэтому старт — английский и русский. Немецкие, французские и тайские кампании подключаются после теста, вместе с посадочными страницами на этих языках.</p>
+    <div class="note"><b>Россиян до вылета видит только Яндекс.</b> Google не показывает рекламу в России с марта 2022 года, Facebook и Instagram там заблокированы. Как только человек прилетел в Таиланд, его достают все три системы.</div>
+  </section>
+
+  <section id="sites">
+    <h2><span class="num">2</span>Что я увидел на ваших сайтах</h2>
+    <p class="sub">Проверил 12.11.2026 исходный код и страницы. Эти пункты решаются до запуска рекламы — иначе часть бюджета уйдёт впустую.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Что</th><th>Почему важно</th><th>Что делаем</th></tr></thead>
+        <tbody>
+          <tr><th>Нет Google Analytics 4, Google Tag Manager, тега Google Ads и пикселя Meta</th><td>Google и Meta не видят брони и не могут обучаться на них. Нельзя посчитать стоимость аренды по каналам.</td><td>Ставлю GTM, GA4, конверсии Google Ads, пиксель Meta, цели Метрики. Источник каждой брони — в CRM.</td></tr>
+          <tr><th>Разные условия предоплаты на трёх сайтах</th><td>«Без предоплаты», «может потребоваться» и «обязательна» — клиент теряет доверие.</td><td>Одна политика предоплаты, депозита и страховки на всех сайтах.</td></tr>
+          <tr><th>Цена «от 600 ฿» на travelthai.online, а минимальная в каталоге — 840 ฿</th><td>Цена в объявлении должна совпадать с сайтом, иначе отклонения и жалобы.</td><td>Выравниваем «от …» с каталогом.</td></tr>
+          <tr><th>Название «Thailand Rent-a-Car» близко к Thai Rent a Car</th><td>У них ≈2 900 брендовых поисков в месяц и активная реклама — путаница и риск жалобы на товарный знак.</td><td>Один бренд, совпадающий с карточкой в Google Maps; проверка прав на название.</td></tr>
+          <tr><th>На мобильном cookie-баннер закрывает ≈¼ экрана, нет отзывов</th><td>Большинство кликов — с телефона; первый экран решает.</td><td>Компактный баннер, блок отзывов Google, закреплённая кнопка WhatsApp/Telegram.</td></tr>
+          <tr><th>Все три сайта — только про машины</th><td>Мотоциклы и скутеры — ≈29 % спроса в Google и ≈42 % в Яндексе.</td><td>Отдельный мото-модуль, если есть свой парк или партнёр.</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><b>Какой сайт под какой язык.</b> Английский в Google и Meta — thailandrentacar.com/en: единственный сайт с полным каталогом, ценами и поиском по датам. Русский в Google и Meta — thailandrentacar.com/ru. В Яндексе — один домен на выбор (travelthai.online после правок или phuketrentacar.ru): и Google, и Яндекс не показывают два сайта одного бизнеса в одном рекламном блоке.</p>
+  </section>
+
+  <section id="channels">
+    <h2><span class="num">3</span>Каналы и кампании</h2>
+    <p class="sub">Цена клика — по данным Keyword Planner Google, прогнозу бюджета Яндекс Директа и рыночным бенчмаркам Meta.</p>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Система</th><th>Кампании</th><th>Кого достаём</th><th class="n">Цена клика</th></tr></thead>
+        <tbody>
+          <tr><th>Google Поиск</th><td>Английский «на острове»; английский «до поездки» по миру; русский; конкуренты (Avis, Hertz, Sixt, Drive и др. + «Пхукет»). После теста — тайский, немецкий, французский.</td><td>Обе аудитории, кроме россиян в России</td><td class="n">$0,5–2,4</td></tr>
+          <tr><th>Яндекс Директ</th><td>Русский поиск по России, Казахстану и Беларуси; русский поиск с гео «Таиланд». После теста — сопутствующие запросы (аэропорт, права в Таиланде) и РСЯ.</td><td>Россияне до вылета и на острове</td><td class="n">20–37 ₽<br><small>Таиланд 30–96 ₽</small></td></tr>
+          <tr><th>Facebook / Instagram</th><td>«Живут или недавно были на Пхукете» по языкам: русский, английский, немецкий+французский. Тест Индии до поездки. Ретаргетинг посетителей сайта.</td><td>Туристы и экспаты на острове</td><td class="n">$0,25–0,80</td></tr>
+          <tr><th>Позже</th><td>Google Demand Gen, Telegram-каналы Пхукета, листинги у агрегаторов.</td><td>Масштабирование</td><td class="n">—</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Сейчас по запросу «phuket car rental» рекламируются Mango Rent, VIKAR-Rent и Trip.com, по «аренда авто пхукет» — шесть объявлений местных прокатов. У ваших доменов за всё время нет ни одного объявления в Google (по Google Ads Transparency Center).</p>
+  </section>
+
+  <section id="process">
+    <h2><span class="num">4</span>Как работаем</h2>
+    <ol class="steps">
+      <li><b>Подготовка, 1–2 недели</b>Трекинг броней (GTM, GA4, конверсии, пиксель, цели Метрики, источник брони в CRM), единые условия на сайтах, один бренд, правки первого экрана. Собираю кампании и объявления на английском и русском.</li>
+      <li><b>Тест, 4 недели</b>Горячие поисковые кампании в Google и Яндексе плюс Facebook/Instagram на острове и ретаргетинг. Рекламный бюджет ≈$1 200 (≈40 тыс. THB) в сезон. Ожидание — 10–25 оплаченных аренд. Главный результат — фактическая стоимость аренды по каждому каналу.</li>
+      <li><b>Масштабирование</b>Наращиваю каналы, где стоимость аренды ниже вашего порога, выключаю убыточные. Добавляю языки, мото и соседние направления (Краби, Као Лак) — по вашему решению.</li>
+    </ol>
+  </section>
+
+  <section id="plans">
+    <h2><span class="num">5</span>Три плана</h2>
+    <p class="sub">Сезон — декабрь–февраль, низкий сезон — май–сентябрь. Аренды — средняя оценка, в скобках — вилка. Курс: 33,7 THB за $1.</p>
+    <div class="table-wrap">
+      <table class="plans">
+        <thead>
+          <tr><th></th><th class="plan">A · экономичный<small>≈10 аренд в месяц</small></th><th class="plan">B · оптимальный<small>≈100 аренд в сезон</small></th><th class="plan">C · максимальный<small>все окупаемые каналы</small></th></tr>
+        </thead>
+        <tbody>
+          <tr><th>Кампании</th><td>Google поиск EN «на острове» и RU; Яндекс поиск RU</td><td>Всё из A на полную ёмкость + Google EN «до поездки», конкуренты; Facebook/Instagram на острове; Индия; ретаргетинг</td><td>Только окупаемые каналы на максимум: Google EN «на острове», RU и тайский; Яндекс; Facebook/Instagram на острове до потолка; Индия; ретаргетинг. Без дорогих Google «до поездки» и конкурентов</td></tr>
+          <tr><th>Рекламный бюджет, сезон</th><td class="n">$513<br><small>≈17 тыс. THB</small></td><td class="n">$5 195<br><small>≈175 тыс. THB</small></td><td class="n">$14 432<br><small>≈486 тыс. THB</small></td></tr>
+          <tr><th>Рекламный бюджет, низкий сезон</th><td class="n">$404<br><small>≈14 тыс. THB</small></td><td class="n">$3 088<br><small>≈104 тыс. THB</small></td><td class="n">$10 724<br><small>≈361 тыс. THB</small></td></tr>
+          <tr><th>Аренд в месяц, сезон</th><td class="n">≈11<br><small>(4–22)</small></td><td class="n">≈98<br><small>(29–246)</small></td><td class="n">≈267<br><small>(71–777)</small></td></tr>
+          <tr><th>Аренд в месяц, низкий сезон</th><td class="n">≈11<br><small>(4–22)</small></td><td class="n">≈65<br><small>(19–173)</small></td><td class="n">≈203<br><small>(53–603)</small></td></tr>
+          <tr><th>Рекламная стоимость аренды, сезон / низкий</th><td class="n">$46 / $37</td><td class="n">$53 / $47</td><td class="n">$54 / $53</td></tr>
+          <tr><th>Ведение (раздел 6)</th><td class="n">$3 000</td><td class="n">$3 000</td><td class="n">$3 000</td></tr>
+          <tr class="total"><th>Итого в месяц, сезон</th><td class="n">$3 513<br><small>≈118 тыс. THB</small></td><td class="n">$8 195<br><small>≈276 тыс. THB</small></td><td class="n">$17 432<br><small>≈587 тыс. THB</small></td></tr>
+          <tr class="total"><th>Итого в месяц, низкий сезон</th><td class="n">$3 404<br><small>≈115 тыс. THB</small></td><td class="n">$6 088<br><small>≈205 тыс. THB</small></td><td class="n">$13 724<br><small>≈463 тыс. THB</small></td></tr>
+          <tr class="total"><th>Полная стоимость аренды (реклама + ведение), сезон / низкий</th><td class="n">$319 / $309</td><td class="n">$84 / $94</td><td class="n">$65 / $68</td></tr>
+          <tr><th>Полная стоимость аренды в % от чека, сезон / низкий</th><td class="n">99 % / 151 %</td><td class="n">26 % / 46 %</td><td class="n">20 % / 33 %</td></tr>
+          <tr><th>Вывод</th><td><span class="tag tag--bad">дорого на аренду</span><br><small>Ведение больше бюджета: годится только как первый, тестовый месяц</small></td><td><span class="tag tag--good">рекомендую для старта</span><br><small>Окупается в сезон; в низкий сезон бюджет лучше снижать</small></td><td><span class="tag tag--good">лучшая цена аренды</span><br><small>Если парк выдерживает 200–270 аренд в месяц</small></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p><b>Ориентир окупаемости.</b> Средний чек в сезон — ≈10 840 THB ($322): Yaris по вашему прайсу, 10 дней, средняя скидка 15 %. В низкий сезон — ≈6 900 THB ($205). Если на привлечение вы готовы отдавать 25 % чека (столько берут агрегаторы), допустимая стоимость аренды — ≈$80 в сезон и ≈$51 в низкий.</p>
+    <div class="note note--warn"><b>Почему не 1 000 аренд в месяц.</b> Вся целевая поисковая семантика в Google и Яндексе даже в январе даёт ≈5 500 кликов в месяц — это ≈80 аренд. Всё сверх этого приходит из Facebook/Instagram на острове и ретаргетинга. Расширение плана C до ≈400 аренд в сезон возможно за ≈$30 тыс. бюджета, но стоимость аренды вырастает до ≈$74. Для 1 000 нужны мото, листинги у агрегаторов, соседние направления и парк от 350 машин.</div>
+  </section>
+
+  <section id="price">
+    <h2><span class="num">6</span>Стоимость моих услуг</h2>
+    <div class="price">
+      <div class="price__main">
+        <p class="price__fig">10 % от рекламного бюджета</p>
+        <p><b>но не менее $3 000 в месяц</b> (≈101 тыс. THB). При бюджетах до $30 000 в месяц это фиксированные $3 000.</p>
+        <p class="small">Рекламный бюджет вы оплачиваете площадкам напрямую, рекламные кабинеты оформлены на вашу компанию и остаются у вас.</p>
+      </div>
+      <div class="box">
+        <h3>Входит</h3>
+        <ul>
+          <li>Настройка трекинга броней и сквозной аналитики</li>
+          <li>Запуск и ведение Google Ads, Яндекс Директа и Meta Ads</li>
+          <li>Семантика, минус-слова, тексты объявлений и креативы</li>
+          <li>ТЗ на правки посадочных страниц</li>
+          <li>Ежедневная оптимизация ставок и бюджетов</li>
+          <li>Еженедельный отчёт и разбор месяца</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Не входит</h3>
+        <ul>
+          <li>Рекламный бюджет площадок</li>
+          <li>Вёрстка и разработка сайтов — правки делает ваш разработчик по моему ТЗ</li>
+          <li>Обработка заявок — это ваши менеджеры</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="kpi">
+    <h2><span class="num">7</span>Что считаем и чего добиваемся</h2>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Показатель</th><th class="n">Цель</th></tr></thead>
+        <tbody>
+          <tr><td>Стоимость оплаченной аренды по каждому каналу</td><td class="n">≤ ваш порог</td></tr>
+          <tr><td>Конверсия «клик → заявка» в поиске</td><td class="n">≥ 5 %</td></tr>
+          <tr><td>Конверсия «заявка → аренда»</td><td class="n">≥ 30 %</td></tr>
+          <tr><td>Время первого ответа менеджера на заявку</td><td class="n">≤ 5 минут</td></tr>
+          <tr><td>Доля аренд с известным рекламным источником</td><td class="n">≥ 90 %</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Скорость ответа менеджера — самый сильный рычаг: при ответе через сутки «заявка → аренда» падает в 2–3 раза, и вся реклама дорожает вместе с ней.</p>
+  </section>
+
+  <section id="need">
+    <h2><span class="num">8</span>Что нужно от вас</h2>
+    <ul>
+      <li>Доступы к сайтам или контакт разработчика, доступ к CRM или таблице броней.</li>
+      <li>Рекламные кабинеты Google Ads, Meta Business и Яндекс Директ на вашу компанию — помогу завести и подобрать способ оплаты Яндекса из Таиланда.</li>
+      <li>Единые условия аренды: предоплата, депозит, страховка, цены «от».</li>
+      <li>Ответ на заявки в течение нескольких минут, особенно в сезон.</li>
+      <li>Ваш порог: сколько вы готовы платить за одну оплаченную аренду.</li>
+      <li>Решение по мото: есть ли свой парк или партнёр.</li>
+    </ul>
+  </section>
+
+  <section id="method">
+    <h2><span class="num">9</span>Откуда цифры и чего пока никто не знает</h2>
+    <p>Спрос и цены клика — реальные данные систем. Конверсия из клика в оплаченную аренду нигде не публикуется: в расчётах — 0,5 / 1,5 / 3 % (низкая / средняя / высокая) по ближайшим бенчмаркам. Поэтому вилки широкие, а тест нужен, чтобы заменить оценки фактом.</p>
+    <ul>
+      <li>Охват Facebook/Instagram на Пхукете Meta не публикует — замеряю в первую неделю. От него зависит 40–60 % аренд в планах B и C.</li>
+      <li>Русскоязычный спрос на аренду в Яндексе за год снизился на 16–25 %, поэтому Яндекс заложен с запасом.</li>
+      <li>Прогноз Яндекса снят в межсезонье; в сезон клики дорожают.</li>
+    </ul>
+    <h3>Источники</h3>
+    <ol class="src">
+      <li>Google Ads Keyword Planner (API): объёмы и ставки за ноябрь 2025 – октябрь 2026, выгрузка 12.11.2026.</li>
+      <li>Яндекс Вордстат (10.09–09.10.2026) и прогноз бюджета Яндекс Директа, снятый 12.11.2026, суммы без НДС.</li>
+      <li>Министерство туризма и спорта Таиланда (MOTS) и TAT: иностранные гости Пхукета в 2025–2026 гг.</li>
+      <li>Google Ads Transparency Center и Meta Ad Library: реклама конкурентов, 12.11.2026.</li>
+      <li>WordStream/LocaliQ 2026, Triple Whale 2025, партнёрские данные Localrent: конверсии и цены клика в travel; DiscoverCars: цены и длительность аренды в аэропорту Пхукета.</li>
+      <li>Сроки бронирования: данные аренды авто на острове Чеджу (2025–2026) как ближайший островной аналог.</li>
+    </ol>
+  </section>
+
+  <footer>
+    <p>Предложение от 12.11.2026, действует до 12.12.2026. Оценки до теста заменяются фактическими цифрами после первых 4 недель.</p>
+    <p>Страница не индексируется поисковиками, cookies и счётчиков нет. <a href="#top">Наверх ↑</a></p>
+  </footer>
+
+</div>
+</body>
+</html>
